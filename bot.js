@@ -4,6 +4,11 @@ var config = require('./config');
 
 //Pass configuration settings into twit api
 var Twitter = new twit(config);
+/*
+var rtRoute = path.join(__dirname,'botFunctions','retweet');
+rtRoute = path.normalize(rtRoute);
+var retweet = require(rtRoute)(Twitter);
+*/
 
 var retweet = function(){
 
