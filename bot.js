@@ -22,9 +22,21 @@ var retweet = function(){
             var retweetID = data.statuses[0].id_str;
 
             //retweet search result via http post method
-            Twitter.post('statuses/retweet/:id');
+            Twitter.post('statuses/retweet/:id',{id: retweetID},
+                function(err,res){
+                    if(res){
+                        console.log('Retweeted!');
+                    }
+                    if(err){
+                        console.log('An eroor occured while retweeting!');
+                    }
+                }
+            ); //end Twitter.post
         }
-
     });
-
 }
+
+retweet();
+
+//retweet in every 50 minutes
+//setInterval(retweet,30000000);
