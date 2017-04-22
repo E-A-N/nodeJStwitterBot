@@ -10,6 +10,15 @@ rtRoute = path.normalize(rtRoute);
 var retweet = require(rtRoute)(Twitter);
 */
 
+//Hellor World!
+Twitter.post(
+    'statuses/update',
+    {status: "Herro Loves!"},
+    function(err,data,res){
+        console.log(data);
+    }
+);
+
 var retweet = function(){
 
     var params = {};
@@ -18,7 +27,7 @@ var retweet = function(){
     params.result_type = 'recent';
     params.lang = 'en';
 
-    Twitter.get('serach/tweets',params, function(err,data){
+    Twitter.get('search/tweets',params, function(err,data){
         //check for errors
         if(err) {
             console.log("An error has occurred during search...");
@@ -33,7 +42,7 @@ var retweet = function(){
                         console.log('Retweeted!');
                     }
                     if(err){
-                        console.log('An eroor occured while retweeting!');
+                        console.log('An error occured while retweeting!');
                     }
                 }
             ); //end Twitter.post
