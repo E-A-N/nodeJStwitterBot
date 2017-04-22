@@ -1,12 +1,13 @@
 exports = module.exports = function(Twitter){
 
+    console.log("Herro Robo! <3");
     var params = {};
     //use query strings to search hashtags
     params.q = '#depression, #depressed';
     params.result_type = 'recent';
     params.lang = 'en';
 
-    Twitter.get('serach/tweets',params, function(err,data){
+    Twitter.get('search/tweets',params, function(err,data){
         //check for errors
         if(err) {
             console.log("An error has occurred during search...");
@@ -21,7 +22,7 @@ exports = module.exports = function(Twitter){
                         console.log('Retweeted!');
                     }
                     if(err){
-                        console.log('An eroor occured while retweeting!');
+                        console.log('An error occured while retweeting!');
                     }
                 }
             ); //end Twitter.post
