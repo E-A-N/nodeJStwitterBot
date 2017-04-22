@@ -46,6 +46,8 @@ retweet();
 //retweet in every 50 minutes
 //setInterval(retweet,30000000);
 
+
+/*  FAVORITE BOT */
 // find a random tweet and 'favorite' it
 var favoriteTweet = function(){  
   var params = {
