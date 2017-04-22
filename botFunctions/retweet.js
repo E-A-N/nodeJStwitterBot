@@ -1,4 +1,4 @@
-exports = module.exports = function(Twitter, hastags){
+exports = module.exports = function(Twitter, hashtags){
 
     console.log("Herro Robo! <3");
     var params = {};
