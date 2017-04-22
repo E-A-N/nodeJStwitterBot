@@ -1,9 +1,9 @@
-exports = module.exports = function(Twitter){
+exports = module.exports = function(Twitter, hastags){
 
     console.log("Herro Robo! <3");
     var params = {};
     //use query strings to search hashtags
-    params.q = '#depression, #depressed';
+    params.q = hashtags;
     params.result_type = 'recent';
     params.lang = 'en';
 
