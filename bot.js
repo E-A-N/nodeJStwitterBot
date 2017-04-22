@@ -14,7 +14,7 @@ var retweet = function(){
 
     var params = {};
     //use query strings to search hashtags
-    params.q = '#nodejs, #Nodejs';
+    params.q = '#depression, #depressed';
     params.result_type = 'recent';
     params.lang = 'en';
 
@@ -48,8 +48,9 @@ retweet();
 
 
 /*  FAVORITE BOT */
+/*
 // find a random tweet and 'favorite' it
-var favoriteTweet = function(){  
+var favoriteTweet = function(){
   var params = {
       q: '#nodejs, #Nodejs',  // REQUIRED
       result_type: 'recent',
@@ -78,12 +79,13 @@ var favoriteTweet = function(){
   });
 }
 // grab & 'favorite' as soon as program is running...
-favoriteTweet();  
+favoriteTweet();
 // 'favorite' a tweet in every 60 minutes
 setInterval(favoriteTweet, 3600000);
 
 // function to generate a random tweet tweet
-function ranDom (arr) {  
+function ranDom (arr) {
   var index = Math.floor(Math.random()*arr.length);
   return arr[index];
 };
+*/
