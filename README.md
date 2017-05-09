@@ -1,2 +1,5 @@
-# nodeJStwitterBot
-A twitter bot created in node js
+# NodeJS Twitter Bot Features
+
+* Retweeting
+* Custom Tweets
+* Random Favoriting
